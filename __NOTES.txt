@@ -1,0 +1,43 @@
+Works:
+
+prettier --single-quote --print-width=120 --write ClientApp.jsx
+
+Does work (with npm run format) (yarn format doesn't work):
+
+    "format": "prettier --single-quote --print-width=120 --write --parser=flow --tab-width=2 \"js/**/*.{js,jsx}\""
+
+(Works from Root) 
+prettier --single-quote --print-width=120 --write --parser=flow --tab-width=2 "js/**/*.{js,jsx}"
+
+Yarn format 
+npm run format 
+
+
+
+from root:
+Beaus-Mac:complete-intro-to-react beau$ ./node_modules/.bin/webpack js/ClientApp.jsx public/bundle.js
+(args are first input then output to public)
+
+Now, because of webpack... I don't need args.
+(root) beau$ ./node_modules/.bin/webpack
+
+"Tools for the sake of ease at the cost of complexity"
+
+(root) yarn build
+
+This works!
+beau$ yarn build -- --watch
+
+eslint **/*.{js,jsx} --quiet
+??
+Nope… Therefore:
+./node_modules/.bin/eslint **/*.{js,jsx} --quiet
+
+[Now, “yarn lint” works]
+
+ yarn build -- --watch
+
+
+
+from vid7 FOR ALL GLOBAL INSTALLS:
+npm install --global
