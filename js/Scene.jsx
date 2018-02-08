@@ -1,8 +1,9 @@
 import React from 'react';
+// import { Circ } from 'gsap';
 
-// import ForegroundContainer from './ForegroundContainer';
 import Tree from './Tree';
 import Duck from './Duck';
+import TestCircle from './TestCircle';
 
 const Scene = () => (
   <div className="scene-container">
@@ -15,6 +16,7 @@ const Scene = () => (
     </svg>
     <Tree />
     <Duck />
+    <TestCircle id="bird-anchor-test" />
   </div>
 );
 
