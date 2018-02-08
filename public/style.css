@@ -480,12 +480,15 @@ html {
   color: navy;
   border: 2px solid green;
 }
-  svg {
-    position: absolute;
-    top: 0;
-    left: 0;
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-
+.duck-svg {
+  border: 2px solid red;
+  
+}
 
 /* .landing {
   background-color: rgba(220, 220, 220, .7);

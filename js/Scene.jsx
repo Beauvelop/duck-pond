@@ -6,7 +6,7 @@ import WaterForeground from './WaterForeground';
 import Duck from './Duck';
 import Tree from './Tree';
 
-class StyledBgSVG extends Component {
+class Scene extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -20,21 +20,23 @@ class StyledBgSVG extends Component {
   // }
   render() {
     return (
-      <svg  viewBox="0 0 1920 1080">
-        <linearGradient id="canvas-grad" x2="1920" y1="540" y2="540" gradientUnits="userSpaceOnUse">
-          <stop offset="0" stopColor="var(--sharedGradColor)" />
-          <stop offset="1" stopColor="var(--bgGradRight)" />
-        </linearGradient>
-        <path className="bg-canvas" fill="url(#canvas-grad)" d="M0 0h1920v1080H0z" />
-        <WaterForeground />
-        <Tree />
-        <Duck/>
-      </svg>
+      <div>
+        <svg viewBox="0 0 1920 1080">
+          <linearGradient id="canvas-grad" x2="1920" y1="540" y2="540" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stopColor="var(--sharedGradColor)" />
+            <stop offset="1" stopColor="var(--bgGradRight)" />
+          </linearGradient>
+          <path className="bg-canvas" fill="url(#canvas-grad)" d="M0 0h1920v1080H0z" />
+          <WaterForeground />
+          <Tree />
+        </svg>
+        <Duck />
+      </div>
     );
   }
 }
 
-export default StyledBgSVG;
+export default Scene;
 
 /*
 
