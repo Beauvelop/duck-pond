@@ -1,4 +1,3 @@
-// import React from 'react';
 import React, { Component } from 'react';
 import { Power1, TimelineLite, Circ } from 'gsap';
 
@@ -12,7 +11,7 @@ class Duck extends Component {
 
   componentDidMount() {
     this.state.timeline
-      .fromTo('.duck-svg', 4, { x: 300, repeat: -1, ease: Circ.easeOut }, { x: -300 })
+      .fromTo('.duck-svg', 140, { x: 500, repeat: -1, ease: Circ.easeOut }, { x: -700 })
       .from('.ripple-1', 2.5, { autoAlpha: 0, repeat: -1, ease: Power1.easeInOut, yoyo: true }, '5.0')
       .from('.ripple-2', 2.5, { autoAlpha: 0, repeat: -1, ease: Power1.easeInOut, yoyo: true }, '5.3')
       .from('.ripple-3', 2.5, { autoAlpha: 0, repeat: -1, ease: Power1.easeInOut, yoyo: true }, '5.6')
@@ -112,7 +111,7 @@ class Duck extends Component {
         </g>
         <path
           id="duck-surfaced"
-          fill="#0F0D0B"
+          fill="#0e0c0b"
           d="M125.4 31.1c-.1.1 0 .1 0 0-.4.2-.8.4-1.1.3-.4-.2-.8-.4-1.2-.5h.1c1.5-1.2 3-2.8 3.3-4.7-2.9 1.5-6.7 1.9-9.8 3.2-3.3.8-6.8-.8-10-1.5-4.7-1-9.4-1.9-14.2-2.4-6.8-.7-14.8-1.8-21.6-.7-3.6 0-7.5.8-10.9 1.9-1.4.2-2.7.4-3.9 1-3.7.8-6.9 2.4-10 4.4-.8.5-1.7.8-2.6.8-4.5 1.7-.2-8.2.1-9.6.8-3.7.6-7.8-1.9-10.9-5-6.3-14.6-5-19.4.8-3.3 9.6-15 12.3-20 20.4 6.6 0 18.7-15 24.9-7.7.6.3 1.1.7 1.5 1.2 1.5 2.9-.9 6.4-1.8 9.3-1.2 2.5-1.7 4.7-1.6 6.7 23.8-.3 76.7-.3 95.2.1.3-.3.6-.5.9-.8 2.3-3.2 5.7-5.4 8-8.5 1-2.4 1.8-4.9 2.6-7.4-1.9 2-4.2 3.5-6.6 4.6z"
         />
 

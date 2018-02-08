@@ -381,11 +381,11 @@ input[type="search"]::-webkit-search-decoration {
  * Define consistent border, margin, and padding.
  */
 
-fieldset {
+/* fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
-}
+} */
 
 /**
  * 1. Correct `color` not being inherited in IE 8/9/10/11.
@@ -476,19 +476,35 @@ html {
 .app > h1 {
   color: white;
 }
-.StyledBgSVG {
-  color: navy;
-  border: 2px solid green;
+
+.scene-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
 svg {
   position: absolute;
-  top: 0;
+}
+#scene-bg-svg {
+  height: 100vh;
+  width: 100vw;
+}
+
+.duck-svg {
+  bottom: 1vh;
+  right: 1vw; 
+  height: 25vh;
+  width: 35vw;
+}
+.tree-svg {
+  left: -2px;
+}
+.pond {
+  bottom: 0;
   left: 0;
 }
-.duck-svg {
-  border: 2px solid red;
-  
-}
+
 
 /* .landing {
   background-color: rgba(220, 220, 220, .7);
