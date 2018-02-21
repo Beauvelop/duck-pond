@@ -1,5 +1,7 @@
 ### "Plumtree"
 ![Scene Screenshot](./readmeImg/scene1.png "Scene Screenshot")
+![Schepers Tweet](./readmeImg/schepers.png "Doug Scheper's comment on twitter")
+I am incredibly flattered and humbled to read this in my twitter feed. (Yet, not too humble to post it on the interwebs 🤓)
 
 
 # duck-pond
@@ -25,5 +27,5 @@ React/GSAP animation of a duck
 |**React**|16.0.0|***√***|
 |**Responsivity**|pending|***iPad,iPhone7,8,X(with some sizing problems),GalaxyS5***|
 |**CSS Variables**|flower/greyScale colors|***√***|
-|**Animations**|GSAP|***√***|`
+|**Animations**|GSAP|***√***|
 -----------------
